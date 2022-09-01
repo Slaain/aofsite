@@ -1,0 +1,4 @@
+j'ai utilisé le paradigme MVC modele view controller pour l'architecture de mon dossier
+le paradigme mvc est aussi une methode de conception qui organise l'interface homme-machine d'une application.
+Il consiste a séparer le modele de données, la vue qui sera l'interface utilisateur et 
+un controleur qui vas gerer les evenements et la synchronisation.

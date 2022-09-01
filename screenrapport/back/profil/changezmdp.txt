@@ -1,0 +1,11 @@
+je fais ma connexion a la base de donnée via ma variable PDO
+j'instaure chaque une des ma valeurs a récuperer via des valariables,
+je recupère les anciennes données du mot de passe dans la bdd avec FETCH
+j'instaure une nouvelle fois ma requete pour la gestion de mes erreurs via if
+je commence par comparé si les deux nouveau mot de passe sont identique
+ensuite je verifie si le nouveau et lancien mot de passe ne sont pas les memes
+si non je le programme le met a jour dans la base de données 
+sinon j'ai fais un echo pour afficher l'erreur.
+
+
+pour la creation de mon tableau qui est censée ressortir les données insérér par l'utilsateur en cours

@@ -1,0 +1,134 @@
+
+@font-face {
+    font-family: 'Arimo-semibold';
+    src: url('../font/Arimo-SemiBoldItalic.ttf') format('truetype')
+}
+
+
+@font-face {
+    font-family: 'Arimo-italic';
+    src: url('../font/Arimo-Italic.ttf') format('truetype')
+}
+
+
+
+body {
+background-color: white !important;
+position: relative;
+}
+.logo{
+width: 15% !important;
+display: flex;
+margin-left: auto;
+margin-right: auto;
+}
+
+                                /* header */
+ul {
+display: flex;
+flex-direction: row;
+justify-content: center;
+list-style-type: none;
+background-color: aliceblue ;
+padding: 1%;
+font-weight: bolder;
+}
+li {
+margin-right: 8%;
+}
+a{
+text-decoration: none;
+color: black !important;
+font-family: 'Arimo-semibold';
+}
+a:hover{
+background-color: #cf2222;
+color: #550166;
+}
+
+                                                /* corps de ma page  */
+                                                /* zone actualité  */
+                                                
+.logoback {
+display: inline-block;
+position: absolute;
+right: 73%;
+top: 41%;
+width: 29%;
+}
+
+.container{
+position: absolute;
+top:18%;
+left: 80%;
+border-left: black 5px solid;
+padding-left: 2%;
+width: 15%!important;
+}
+.embed-responsive-item{
+margin-bottom: 5% !important;
+}
+#actu {
+position: absolute;
+top: 14%;
+left: 84%;  
+}
+.text-center{
+display: block;
+}
+
+/* corps de la page  */
+
+h1 {
+text-align: center;
+}
+.carousel{
+width: 10% !important;
+margin-left: auto;
+margin-right: auto;
+}
+
+input {
+position: absolute;
+left: 30%;
+top: 103%;
+width: 49% !important;
+}
+                        /* <!-- le footer avec une mini nav et les reseaux  --> */
+footer{
+background: #ff4400;   
+margin-top: 1%;
+font-family: 'Arimo-italic'!important;
+}
+.cardun{
+margin-left: 2.5% !important; 
+}
+.card{
+position: absolute;
+display: inline-block !important;
+margin-left: 2% ; 
+}
+
+.navfoot {
+    margin-top: 19%;
+}
+.footer{
+margin-left: 37%;
+}
+.log
+{
+display: flex; 
+padding: 0px 40px;
+text-decoration: none;
+color:  #ff4400 !important; 
+}
+.log:hover{
+    background-color: unset !important;
+
+    }
+p{
+    text-align: center;
+    margin-top: 1%;
+    margin-bottom: 0% !important;
+    font-family: 'Arimo-semibold'!important;
+}

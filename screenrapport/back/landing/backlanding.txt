@@ -1,0 +1,12 @@
+Jai crére une variable PDO pour faire la connexion a ma BDD
+Suite  cela jai pu faire un session_start() pour créer une session d'utlisateur
+Pour ma gestion d'erreur j'ai utilisé la fonction isset pour verifier si les données 
+rentréer tel que le mot de passe est juste ou non.
+L'utilisation des requetes prepare pour preparer ma requete a contenir zero ou plusieurs valeurs!
+l'utilisation de password_hash pour crypter les mots de passe.
+suite cela j'execute ma requete.
+je recupere mes données grace au FETCH
+ensuite viens ma gestion des erreurs via l'instruction if et ma fonction (password_verify)
+grace ma variable data je cherche si dans ma bdd il existe avec mon == (egal) a 1
+viens alors si tout correspond le header(location) nous renverra a la page daccueil
+sinon une redirection sur une page d'erreur

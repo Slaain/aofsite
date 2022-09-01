@@ -1,0 +1,19 @@
+j'instaure chaque une des ma valeurs a récuperer via des valariables,
+l'utilisation de password_hash() vas servir au cryptage du mot de passe
+je fais ma connexion a la base de donnée grace a ma variable $PDO 
+et ma requete sql avec $sql donc ici je lui demande d'insérer dans ma table utilisateur
+les valeurs que l'utilisateur vas rentrer dans les chap nom,prenom,pseudo,mdp,email.
+Je prepare ma requete 
+ensuite j'associe mes valeurs a un parametre avec le BindValue
+j'execute ma requete 
+et ma gestion d'erreur avec l'instruction if et ma fonction predefinie empty qui determine si une variable est vide.
+
+la proposition d'oeuvre ce fait comme l'ajout dun nouvel utilisateur 
+via mon instruction d'ajout mais en ayant une requete sql et des données differentes
+
+pour le tableau je le génère grace a ma fonction table 
+et a ma requete sql qui vas selectionner les oeuvres en fonction de la session ouverte.
+mon tableau sera généré grace a mes variables que je vais ensuite rappeler dans ma vue 
+un tableau en incrementation a été fait avec l'indice i++ qui me permet de rajoute +1 a chaque nouvelle valeur
+l'utilisation du foreach pour facilité le parcour du tableau qui comprend
+des echo avec des valeurs ou les données sont recuperer de la base de données.

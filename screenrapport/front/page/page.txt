@@ -1,0 +1,1 @@
+J'ai pu crée un tableau generer via php et ma base de données et appelé grace aux echo et la variable $lignes crée au dessus 

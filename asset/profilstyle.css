@@ -1,0 +1,146 @@
+
+@font-face {
+font-family: 'Arimo-semibold';
+src: url('../font/Arimo-SemiBoldItalic.ttf') format('truetype')
+}
+
+
+@font-face {
+font-family: 'Arimo-italic';
+src: url('../font/Arimo-Italic.ttf') format('truetype')
+}
+
+
+                    /* personnalisation de mon header et de ma nav  */
+
+html{
+    width: 100%;
+    height: 100%;
+}
+body {
+    background-color: white;
+    color: black;
+}
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+    background-color: aliceblue ;
+    padding: 1%;
+    font-weight: bolder;
+    font-family: 'Arimo-semibold' !important;
+}
+
+li {
+    margin-right: 8%;
+    font-family: 'Arimo-semibold';
+}
+
+a{
+    text-decoration: none;
+    color: black !important;
+}
+a:hover{
+    background-color: #cf2222;
+    color: #550166;
+}
+
+
+section{
+display: flex;
+flex-direction: column;
+font-family: 'Arimo-italic';
+align-items: center;
+margin-top: 5%;
+}
+
+
+                        /* Bouton  */
+#sub{
+margin-bottom: 5%;
+}
+#resume{
+height: 108px;
+width: 80%; 
+}
+#avis{
+height: 108px;
+width: 80%;
+}
+.but{
+width: 29%;
+margin-bottom: 2%;
+height: 43px;
+}
+button{
+font-family: 'Arimo-italic';
+}
+                                /* Bouton  */
+
+
+                                
+                            /* formulaire  */
+.formu {
+color: whitesmoke;
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+/* margin-top: 12%;  */
+}
+label{
+display: block;
+width: 150px;
+float: left;
+font-family: 'Arimo-semibold';
+}
+
+.logo{
+width: 15%;
+display: flex;
+margin-left: auto;
+margin-right: auto;
+}
+input {
+padding: 0.2%;
+margin-top: 1%;
+border-radius: 5%;
+font-family: 'Arimo-semibold';
+}
+
+#imgtab{
+width: 100%;
+}
+                      /* <!-- le footer avec une mini nav et les reseaux  --> */
+    footer{
+    background: #ff4400;   
+    margin-top: 1%;   
+    }
+    .navfoot {
+        margin-top: 14%;
+    }
+    .card-header{
+        font-family: 'Arimo-semibold';
+            margin-left: 18%;
+            margin-bottom: 1%;
+    }
+    .footer{
+    margin-left: 37%;
+    }
+    .log
+    {
+    display: flex; 
+    padding: 0px 40px;
+    text-decoration: none;
+    color:  #ff4400 !important; 
+    }
+    .log:hover{
+        background-color: unset !important;
+    
+        }
+    p{
+        text-align: center;
+        margin-top: 1%;
+        margin-bottom: 0% !important;
+    }

@@ -1,0 +1,3 @@
+Grace a la methode merise née dans les années 70, j'ai pu concevoir un modele logique de donnée grace au MCD, j'ai pu générer un MLD et avoir ensuite un MPD. Certaines de mes tables
+dependant fonctionellement l'une de l'autre.
+La methode merise ma permis de crée ma base de données et d'avoir aucune erreur sur la conception de ma BDD au sein des données implanté et de leurs utilisation.

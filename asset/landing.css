@@ -1,0 +1,47 @@
+
+@font-face {
+    font-family: 'Arimo-semibold';
+    src: url('../font/Arimo-SemiBoldItalic.ttf') format('truetype')
+}
+@font-face {
+    font-family: 'Arimo-italic';
+    src: url('../font/Arimo-Italic.ttf') format('truetype')
+}
+
+body {
+background-color: white;
+}
+
+                        /* ces caractéristiques on été mise pour centrer le formulaire de connexion */      
+.formu {
+color: rgb(255, 0, 0);
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+/* margin-top: 12%;  */
+}           
+label{
+display: block;
+width: 5%;
+margin-top: 1%;
+float: left;
+font-family: 'Arimo-semibold';
+}
+img {
+width: 15%;
+display: flex;
+}
+.logo{
+margin-left: auto;
+margin-right: auto;
+}
+input{
+padding: 0.2%;
+margin-top: 1%;
+border-radius: 5%;
+font-family: 'Arimo-semibold';
+}
+button{
+    font-family: 'Arimo-semibold';
+}

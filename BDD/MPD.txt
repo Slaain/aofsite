@@ -1,0 +1,36 @@
+CREATE TABLE categorie(
+   id_c INT,
+   nom VARCHAR(50),
+   PRIMARY KEY(id_c)
+);
+
+CREATE TABLE role(
+   id_r VARCHAR(50),
+   nom VARCHAR(50) NOT NULL,
+   PRIMARY KEY(id_r)
+);
+
+CREATE TABLE _user(
+   id_u VARCHAR(50),
+   nom VARCHAR(50) NOT NULL,
+   prenom VARCHAR(50) NOT NULL,
+   surnom VARCHAR(50) NOT NULL,
+   mdp VARCHAR(50) NOT NULL,
+   email VARCHAR(50) NOT NULL,
+   id_r VARCHAR(50) NOT NULL,
+   PRIMARY KEY(id_u),
+   FOREIGN KEY(id_r) REFERENCES role(id_r)
+);
+
+CREATE TABLE audiovisuel(
+   id_a INT,
+   nom VARCHAR(50) NOT NULL,
+   _date DATE NOT NULL,
+   resume VARCHAR(255) NOT NULL,
+   avis VARCHAR(255) NOT NULL,
+   id_c INT NOT NULL,
+   id_u VARCHAR(50) NOT NULL,
+   PRIMARY KEY(id_a),
+   FOREIGN KEY(id_c) REFERENCES categorie(id_c),
+   FOREIGN KEY(id_u) REFERENCES _user(id_u)
+);
