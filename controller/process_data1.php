@@ -26,5 +26,5 @@ if(isset($_POST["query"]))
 
 	echo json_encode($data);
 }
-
+gfggfgffggfbgfgf
 ?>
