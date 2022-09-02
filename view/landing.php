@@ -16,11 +16,11 @@
                 <!-- logo, formulaire de connexion et bouton de connexion pour accer au site ou s'inscrire  -->
 <img src="../images/logo_transparent.png" alt="" class="logo">
 
-<form action="../controller/connect.php" method="POST" enctype="multipart/form-data" class="formu">
+<form action="../controller/connect.php" method="POST" enctype="multipart/form-data" class="formu" required="required">
 
-<label> pseudo: </label><input type="text" name="pseudo" placeholder="pseudo"><br><br>
+<label> pseudo: </label><input type="text" name="pseudo" placeholder="pseudo" required="required"><br><br>
 
-<label>password:</label> <input type="password" name="mdp" placeholder="password"><br><br>
+<label>password:</label> <input type="password" name="mdp" placeholder="password" required="required"><br><br>
 
 <label></label> <button type="submit" name="">connexion</button><br>
 
