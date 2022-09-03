@@ -7,7 +7,6 @@ function dbg($x)
 }
 //connexion a la BDD
 $pdo = new PDO("mysql:host=localhost;dbname=aof", "root", "");
-
 // demarrage de la session 
 session_start();
 //verification des variable definie
