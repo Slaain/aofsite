@@ -1,5 +1,5 @@
 <?php
- require_once '../controller/process_data.php'; 
+ require_once '../controller/process_data1.php'; 
 ?>
 <!DOCTYPE html>
 <html lang="en">

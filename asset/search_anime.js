@@ -33,7 +33,7 @@ function load_search_history()
 				for(var count = 0; count < responseData.length; count++)
 				{
 
-					html += '<li class="list-group-item text-muted" style="cursor:pointer"><i class="fas fa-history mr-3"></i><span onclick="get_text(this)">'+responseData[count].search_query+'</span> <i class="far fa-trash-alt float-right mt-1" onclick="delete_search_history('+responseData[count].id+')"></i></li>';
+					html += '<li class="list-group-item text-muted" style="cursor:pointer"><i class="fas fa-history mr-3"></i><span onclick="load_data(this.value)">'+responseData[count].search_query+'</span> <i class="far fa-trash-alt float-right mt-1" onclick="delete_search_history('+responseData[count].id+')"></i></li>';
 
 				}
 
@@ -48,38 +48,38 @@ function load_search_history()
 	}
 }
 
-// function get_text(event)
-// {
-// 	var string = event.textContent;
+function get_text(event)
+{
+	var string = event.textContent;
 
-// 	//fetch api
+	//fetch api
 
-// 	fetch("../controller/process_data1.php", {
+	fetch("../controller/process_data1.php", {
 
-// 		method:"POST",
+		method:"POST",
 
-// 		body: JSON.stringify({
-// 			search_query : string
-// 		}),
+		body: JSON.stringify({
+			search_query : string
+		}),
 
-// 		headers : {
-// 			"Content-type" : "application/json; charset=UTF-8"
-// 		}
-// 	}).then(function(response){
+		headers : {
+			"Content-type" : "application/json; charset=UTF-8"
+		}
+	}).then(function(response){
 
-// 		return response.json();
+		return response.json();
 
-// 	}).then(function(responseData){
+	}).then(function(responseData){
 
-// 		document.getElementsByName('search_box')[0].value = string;
+		document.getElementsByName('search_box')[0].value = string;
 	
-// 		document.getElementById('search_result').innerHTML = '';
+		document.getElementById('search_result').innerHTML = '';
 
-// 	});
+	});
 
 	
 
-// }
+}
 
 function load_data(query)
 {
