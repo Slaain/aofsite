@@ -1,6 +1,6 @@
 <?php
 require_once('../pagecontroller/redcontrol.php');
-$sql = "select * from utilisateurs";
+$sql = "select * from utilisateur";
 $res = $pdo->prepare($sql);
 $res->execute();
 $lignes = $res->fetchAll(PDO::FETCH_ASSOC);
@@ -71,15 +71,7 @@ $lignes = $res->fetchAll(PDO::FETCH_ASSOC);
 
     <tr class="mol">
     <?php  foreach ($lignes as $l) :  ?>
-    <tr class="lol">
 
-    <td><?php echo $l['id_a']; ?></td>
-    <td><?php echo $l['nom']; ?></td>
-    <td><?php echo $l['_date']; ?></td>
-    <td><img style="height: 100px;" src="<?php echo $l['images']; ?>" alt="" id="imgtab"></td>
-    <td><?php echo $l['resume']; ?></td>
-    <td><a href="../controller/sup.php?chat=<?php echo $l['id_a']; ?>">Supprimer</a></td>
-    <td><a href="../controller/edite.php?chat=<?php echo $l['id_a']; ?>">Editer</a></td>
     </tr>
 
     <?php endforeach; table()?>

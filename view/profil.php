@@ -3,7 +3,7 @@ require_once '../controller/changer_mdp.php';
 require_once '../controller/tableau.php'; 
 
 $pdo = new PDO("mysql:host=localhost;dbname=aof", "root", "");
-$sql= "select * from utilisateurs";
+$sql= "select * from utilisateur";
 $res = $pdo->prepare($sql);
 $res->execute();
 $lignes = $res->fetchAll(PDO::FETCH_ASSOC);
@@ -82,17 +82,7 @@ $lignes = $res->fetchAll(PDO::FETCH_ASSOC);
         <tbody>
             <tr>
                 <?php  foreach ($lignes as $l) :  ?>
-            <tr>
-
-                <td><?php echo $l['id_a']; ?></td>
-                <td><?php echo $l['nom']; ?></td>
-                <td><?php echo $l['_date']; ?></td>
-                <td id="imgtab" ><img style="height: 100px;" src="<?php echo $l['images'] ; ?>" alt="" ></td>
-                <td><?php echo $l['resume']; ?></td>
-                <td><a href="../controller/sup.php?chat=<?php echo $l['id_a']; ?>">Supprimer</a></td>
-                <td><a href="../controller/edite.php?chat=<?php echo $l['id_a']; ?>">Editer</a></td>
-            </tr>
-
+       
         <?php endforeach; table()?>
 
         </tr>

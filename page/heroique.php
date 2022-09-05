@@ -1,6 +1,6 @@
 <?php
 require_once('../pagecontroller/herocontrol.php');
-$sql = "select * from utilisateurs";
+$sql = "select * from utilisateur";
 $res = $pdo->prepare($sql);
 $res->execute();
 $lignes = $res->fetchAll(PDO::FETCH_ASSOC);
@@ -71,13 +71,7 @@ $lignes = $res->fetchAll(PDO::FETCH_ASSOC);
 
     <tr class="mol imgcar" >
     <?php  foreach ($lignes as $l) :  ?>
-    <tr class="lol">
 
-    <td><?php echo $l['id_a']; ?></td>
-    <td><?php echo $l['nom']; ?></td>
-    <td><?php echo $l['_date']; ?></td>
-    <td><img style="height: 100px;" src="<?php echo $l['images']; ?>" alt="" id="imgtab"></td>
-    <td><?php echo $l['resume']; ?></td>
     </tr>
 
     <?php endforeach; table()?>

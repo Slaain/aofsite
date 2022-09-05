@@ -27,7 +27,7 @@
 <label> prénom: </label><input type="text" name="prenom" placeholder="prenom" required="required"><br><br>
 <label> pseudo: </label><input type="text" name="pseudo" placeholder="pseudo" required="required"><br><br>
 <label>Mot de passe:</label> <input type="password" name="mdp" placeholder="Mot de passe" required="required"><br><br>
-<label>Retapez votreMot de passe:</label> <input type="password" name="mdpConfirm" placeholder="Mot de passe" required="required"><br><br>
+<label>Retapez votre Mot de passe:</label> <input type="password" name="mdpConfirm" placeholder="Mot de passe" required="required"><br><br>
 <label>email:</label> <input type="email" name="email" placeholder="email" required="required"> <br><br>
 <label></label> <button type="submit" name="" required="required">inscription</button><br>
 </form>  
